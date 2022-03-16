@@ -1,5 +1,7 @@
 
 files=$(git status -u)
+DATE=$(date)
+git commit -am "update $DATE"
 for f in $files; do
 	if [ -f "$f" ]; then
 		echo "adding $f"
