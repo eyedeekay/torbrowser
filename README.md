@@ -26,5 +26,5 @@ git clone --depth 1 https://github.com/eyedeekay/torbrowser -b initialize torbro
 then by pulling the main branch into your local directory.
 
 ```sh
-git pull origin main
+git pull --keep origin main
 ```
