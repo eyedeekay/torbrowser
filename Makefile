@@ -14,5 +14,6 @@ index:
 	echo '</head>' >> index.html
 	echo '<body>' >> index.html
 	pandoc README.md >> index.html
+	ls -lah | sed "s|`whoami`|user|g" >> index.html
 	echo '</body>' >> index.html
 	echo '</html>' >> index.html
