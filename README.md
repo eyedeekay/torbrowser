@@ -16,8 +16,15 @@ Note to self: In a month, when you can't remember where this repo is
 checked out, remember it's ~/go/src/i2pgit.org/idk/torbrowser because
 it is checked out next to the plugin.
 
-To checkout only the initial commit:
+To set up your own copy of the mirror, start by checking out only the
+initial commit:
 
 ```sh
-git clone https://github.com/eyedeekay/torbrowser -b 9c5bb6a02c53b962fa45beee26704b60d3dec014
+git clone --depth 1 https://github.com/eyedeekay/torbrowser -b initialize torbrowser
+```
+
+then by pulling the main branch into your local directory.
+
+```sh
+git pull origin main
 ```
