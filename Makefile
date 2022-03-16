@@ -14,6 +14,7 @@ index:
 	echo '</head>' >> index.html
 	echo '<body>' >> index.html
 	pandoc README.md >> index.html
-	ls -lah | sed "s|`whoami`|user|g" >> index.html
+	find . -name 'tor*' -exec sh -c 'echo - [{}]\({}\) | sed "s|`whoami`|user|g" | sed "s|./||g"' \; | sort >> index.html
+	#>> index.html
 	echo '</body>' >> index.html
 	echo '</html>' >> index.html
