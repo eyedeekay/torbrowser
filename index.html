@@ -11,6 +11,10 @@
 <p>This is a Tor Browser mirror that combines git abuse, my website, and I2P torrents to make Tor Browser into an I2P torrent, allowing users to download it anonymously using I2P Torrents. It also acts as a regular Tor Browser mirror. Each of the files in this repo has a corresponding torrent, which I seed initially. But, every user of <a href="https://eyedeekay.github.io/i2p.plugins.tor-manager"><code>i2p.plugins.tor-manager</code></a> becomes a seeder also(As long as they’re using Java I2P for now).</p>
 <p>So this repository serves dual purposes, it acts as a Tor mirror, and as a distribution point for I2P Torrents which allow you to download the Tor Browser.</p>
 <p>Note to self: In a month, when you can’t remember where this repo is checked out, remember it’s ~/go/src/i2pgit.org/idk/torbrowser because it is checked out next to the plugin.</p>
+<p>To set up your own copy of the mirror, start by checking out only the initial commit:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">git</span> clone --depth 1 https://github.com/eyedeekay/torbrowser -b initialize torbrowser</span></code></pre></div>
+<p>then by pulling the main branch into your local directory.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">git</span> pull --keep origin main</span></code></pre></div>
 <ul>
 <li><a href="tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url">tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url</a></li>
 <li><a href="tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url.torrent">tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url.torrent</a></li>
