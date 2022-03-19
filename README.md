@@ -32,6 +32,7 @@ git pull --keep origin main
 To mirror by scraping, I recommend:
 
 ```sh
+cd ~/.i2p/i2psnark/
 http_proxy=http://127.0.0.1:4444 wget -r -nH --cut-dirs=1 http://idk.i2p/torbrowser/
 ```
 
