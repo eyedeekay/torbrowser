@@ -15,6 +15,9 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">git</span> clone --depth 1 https://github.com/eyedeekay/torbrowser -b initialize torbrowser</span></code></pre></div>
 <p>then by pulling the main branch into your local directory.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">git</span> pull --keep origin main</span></code></pre></div>
+<p>To mirror by scraping, I recommend:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="va">http_proxy=</span>http://127.0.0.1:4444 <span class="fu">wget</span> -r -nH --cut-dirs=1 http://idk.i2p/torbrowser/</span></code></pre></div>
+<p>Some large downloads will probably fail part of the way, but starting the torrent should re-check the contents against the torrent metadata and essentially resume the interrupted HTTP download as a Bittroent download.</p>
 <ul>
 <li><a href="tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url">tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url</a></li>
 <li><a href="tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url.torrent">tor-browser-installer-win32-11.0.7_ar.exe.asc.last-url.torrent</a></li>

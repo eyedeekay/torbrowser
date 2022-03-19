@@ -28,3 +28,14 @@ then by pulling the main branch into your local directory.
 ```sh
 git pull --keep origin main
 ```
+
+To mirror by scraping, I recommend:
+
+```sh
+http_proxy=http://127.0.0.1:4444 wget -r -nH --cut-dirs=1 http://idk.i2p/torbrowser/
+```
+
+Some large downloads will probably fail part of the way, but starting
+the torrent should re-check the contents against the torrent metadata
+and essentially resume the interrupted HTTP download as a Bittroent
+download.
