@@ -1,3 +1,4 @@
+#! /usr/bin/env sh
 
 files=$(git status -u)
 DATE=$(date)
@@ -10,3 +11,4 @@ for f in $files; do
 		git push --all
 	fi
 done
+./index.sh
