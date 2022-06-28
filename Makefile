@@ -1,6 +1,8 @@
 
-update:
-	cp -rv "$(HOME)/.i2p/i2psnark/"* ./ -v
+update: all index
+
+all:
+	./copy.sh
 	./add.sh
 
 index:
@@ -18,3 +20,4 @@ index:
 	#>> index.html
 	echo '</body>' >> index.html
 	echo '</html>' >> index.html
+	git commit -am "update index" && git push --all
